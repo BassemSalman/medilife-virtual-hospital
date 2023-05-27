@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../index.css">
+
+</head>
+<body>
+    <nav>
+        <div class='nav-center'>
+          <div class='nav-header'>
+            <img src="../logo.jpg" class='logo' alt='logo' />
+            <button class='nav-toggle' onclick={toggleLinks}>
+              <FaBars />
+            </button>
+          </div>
+          <div class='links-container' >
+            <ul class='links' >
+              <li> <a href="../home/Home.html">Home </a></li>
+              <li> <a href="../covid/Covid.html">Covid</a></li>
+              <li> <a href="../mental/Mental.html">Mental </a></li>
+              <li> <a href="../wellness/Wellness.html">Wellness </a></li>
+              <li> <a href="../test/Test.html" class="active">Tests  </a></li>
+              <li> <a href="../booking/booking.html">Bookings </a></li>
+            </ul>
+          </div>
+          <ul class='social-icons'>
+            <!-- {social.map((socialIcon) => {
+              const { id, url, icon } = socialIcon;
+              return (
+                <li key={id}>
+                  <a href={url}>{icon}</a>
+                </li>
+              );
+            })} -->
+          </ul>
+        </div>
+      </nav>    <div style=" padding: 100px; padding-top: 50px" class='animated'>
+        <div class="diala" >
+              <h1 id="wb">Find the right test for your needs</h1>
+              <p id="wbtxt">Want to keep track of your health but aren’t sure where to start? Feeling tired, overwhelmed, or just not as healthy as you should be? These essential tests will give you and your doctor a good idea of where you stand with your overall health and where you can improve. And even if you are feeling healthy, these tests will let you peek under the hood and make sure everything is running well. </p>
+          </div>
+          <div id="Body">
+             
+              <div class="righty">
+                  <h1>Covid-19 test</h1>
+                  <h3>Think you may have COVID-19? </h3>
+                  <p>Choose of our COVID-19 services :</p>
+                  
+                  <div class="products">
+                      <div class="product">
+                          <img src="./images/homepcr.png" alt="" class="scrub"/>
+                          <h3>home testing</h3>
+                          <h4>200,000lbp</h4>
+                          <h6>results in 24hrs</h6>
+                      </div>
+                      <div class="product">
+                          <img src="./images/carpcr.jpg" alt="" class="scrub"/>
+                          <h3>drive-thru testing</h3>
+                          <h4>200,000lbp</h4>
+                          <h6>results in 24hrs</h6>
+                      </div>
+                      <div class="product">
+                          <img src="./images/onsite.jpg" alt="" class="scrub"/>
+                          <h3>on-site testing</h3>
+                          <h5><a href="https://maps.app.goo.gl/XeoDGjgrEKN7N9f18">visit us</a></h5>
+                          <h4>150,000lpb</h4>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <hr style="opacity:0.5"/>
+          <div class="lab">
+              <h1 style="text-decoration:underline">laboratory tests :</h1>
+              <h3 style="text-decoration:underline">check a sample of your blood, urine, or body tissues. </h3>
+              <p>Getting tested at routine intervals can allow you to see the way your body changes over time and empower you to make informed decisions about your health.</p>
+              <label for="tests">
+              Choose the test you need to take and book your appointment:
+              </label>
+              <form class="select">
+                          <div class="waelhamze">
+                              <select id="framework" class="mySelectArrow">
+                                  <option >Select...</option>
+                                  <option>Blood count</option>
+                                  <option>Prothrombin time</option>
+                                  <option>Metabolic panel</option>
+                                  <option>Lipid panel</option>
+                                  <option>Liver panel</option>
+                              </select>
+                               <button id="btn" ><a href="../booking/Booking.html">Book</a>
+                          </div>
+                              <div style="margin-top:10px">
+                              <a style="text-decoration:underline; margin-top:40px;font-size:20px;font-style:italic" href ='/booking/Booking.html'>Book Now</a>
+                              </div>
+                      </form>
+          </div>
+          <hr style="opacity:0.5"/>
+          <div class="scan">
+              <h1 style="text-decoration:underline">Scans :</h1>
+              <p > Medical scans help doctors diagnose everything from haed trauma to foot pain.There are mant different types of imaging technologies. Each works differently</p>
+              <h3 style="text-decoration:underline">Scans available at our medical center.</h3>
+              <div class="products">
+                  <div class="scans">
+                      <img src="./images/xray.jpg" alt="" class="scrub"/>
+                      <h3>X-Ray</h3>
+                      <h4>500,000lbp</h4>
+                  </div>
+                  <div class="scans">
+                      <img src="./images/mri-scan.jpg" alt="" class="scrub"/>
+                      <h3>MRI</h3>
+                      <h4>1,000,000lbp</h4>
+                  </div>
+                  <div class="scans">
+                      <img src="./images/ct.jpg" alt="" class="scrub"/>
+                      <h3>CT scan</h3>
+                      <h4>1,000,000lpb</h4>
+                  </div>
+              </div>
+          </div>
+          <hr style="opacity:0.5"/>
+      </div>
+    
+</body>
+</html>

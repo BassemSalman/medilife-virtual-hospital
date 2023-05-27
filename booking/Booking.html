@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="booking.css">
+  <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+  <nav>
+    <div class='nav-center'>
+      <div class='nav-header'>
+        <img src="../logo.jpg" class='logo' alt='logo' />
+        <button class='nav-toggle' onclick={toggleLinks}>
+          <FaBars />
+        </button>
+      </div>
+      <div class='links-container'>
+        <ul class='links'}>
+          <li> <a href="../home/Home.html">Home </a></li>
+          <li> <a href="../covid/Covid.html">Covid</a></li>
+          <li> <a href="../mental/Mental.html">Mental </a></li>
+          <li> <a href="../wellness/Wellness.html">Wellness </a></li>
+          <li> <a href="../test/Test.html">Tests  </a></li>
+          <li> <a href="../booking/booking.html" class="active">Bookings </a></li>
+        </ul>
+      </div>
+      <ul class='social-icons'>
+        <!-- {social.map((socialIcon) => {
+          const { id, url, icon } = socialIcon;
+          return (
+            <li key={id}>
+              <a href={url}>{icon}</a>
+            </li>
+          );
+        })} -->
+      </ul>
+    </div>
+  </nav>  <div>
+    <form>
+      <div class="book">
+        Full Name:&emsp; <input type="text" maxlenght="100" />
+        <br>
+        Gender:&emsp; &emsp;
+        <input type="radio" name="sex" />
+        Male &emsp;
+        <input type="radio" name="sex" />
+        Female
+        <br>
+        Phone Number:&emsp; <input type="tel" />
+        <br>
+        Date Of Birth:&emsp;
+        <input type="date" id="birthday" name="birthday" />
+        <br>
+        ID number:&emsp; <input type="text" maxlenght="15" />
+        <br>
+      </div>
+      <div class="mail">
+        Email address: &emsp;
+        <input
+          type="email"
+          id="email"
+          pattern=".+@globex\.com"
+          size="30"
+          required
+        />
+        <br>
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        Book Your Doctor:
+        <ul>
+          <li>
+            <input type="checkbox" name="Doctors" /> Dr.Yaacoub - General health
+          </li>
+          <li>
+            <input type="checkbox" name="Doctors" /> Dr.Salman - Surgeon
+          </li>
+          <li>
+            <input type="checkbox" name="Doctors" /> Dr.Bakerli - Dermatologist
+          </li>
+          <li>
+            <input type="checkbox" name="Doctors" /> Dr.Ghoul - Radiologist
+          </li>
+          <li>
+            <input type="checkbox" name="Doctors" /> Dr.Hamze - Orthopedic
+          </li>
+          <li>
+            <input type="checkbox" name="Doctors" /> Dr.Hellani - Pediatrician
+          </li>
+          <li>
+            <input type="checkbox" name="Doctors" /> Dr.Rida - Ophthalmologist
+          </li>
+        </ul>
+         <textarea rows="5" cols="40">
+           Add extra information
+         </textarea>
+         <br>
+         <button type="submit">BOOK NOW</button>
+         <br>
+
+
+
+      </div>
+    </form>
+   
+    <div class="month">
+      <ul>
+        <li>
+          August
+          <br>
+          <span style="font-size:18px">2021</span>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="weekdays">
+      <li>Mon</li>
+      <li>Tue</li>
+      <li>Wed</li>
+      <li>Thu</li>
+      <li>Fri</li>
+      <li>Sat</li>
+      <li>Sun</li>
+    </ul>
+
+    <ul class="days">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>
+        <span class="active">10</span>
+      </li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+      <li>21</li>
+      <li>22</li>
+      <li>23</li>
+      <li>24</li>
+      <li>25</li>
+      <li>26</li>
+      <li>27</li>
+      <li>28</li>
+      <li>29</li>
+      <li>30</li>
+      <li>31</li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wellness.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="../index.css">
+
+</head>
+<body>
+    <nav>
+        <div class='nav-center'>
+          <div class='nav-header'>
+            <img src="../logo.jpg" class='logo' alt='logo' />
+            <button class='nav-toggle' onclick={toggleLinks}>
+              <FaBars />
+            </button>
+          </div>
+          <div class='links-container'>
+            <ul class='links' >
+              <li> <a href="../home/Home.html">Home </a></li>
+              <li> <a href="../covid/Covid.html">Covid</a></li>
+              <li> <a href="../mental/Mental.html">Mental </a></li>
+              <li> <a href="../wellness/Wellness.html" class="active">Wellness </a></li>
+              <li> <a href="../test/Test.html">Tests  </a></li>
+              <li> <a href="../booking/booking.html">Bookings </a></li>
+            </ul>
+          </div>
+          <ul class='social-icons'>
+            <!-- {social.map((socialIcon) => {
+              const { id, url, icon } = socialIcon;
+              return (
+                <li key={id}>
+                  <a href={url}>{icon}</a>
+                </li>
+              );
+            })} -->
+          </ul>
+        </div>
+      </nav>
+    <header>
+        <div class="unav">
+            <ul>
+                <li><a href="#Body">Body</a></li>
+                <li><a href="#Face">Face</a></li>
+                <li><a href="#Hair">Hair</a></li>
+                <li><a href="#Makeup">makeup</a></li>
+                <li><a href="#title">treatment</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1 id="wb">Wellness and Beauty</h1>
+        <p id="wbtxt">What is beauty to you? How you feel and how you look can have a lot to do with one another. Taking care of one area can often lead to benefits in the other. Beauty and wellness may not have clearly defined lines that divide them, but they both have pretty clearly defined benefits that connect them.</p>
+        <div class="Body" id="Body">
+        <img src="./assets/ian-dooley-y_CSTKJ0bEs-unsplash.jpg" style="margin-right:75px" alt="body" class="bodyimg"/>
+            <div class="righty">
+                <h1>Body</h1>
+                <h3>The way your client chooses to present their skin is entirely personal. Exposing or revealing their body can be both vulnerable and intimate. </h3>
+                <p>Loving the skin you live in is undeniably important. Feeling good about the way you look has a lot to do with your skin, for obvious reasons. This means your client needs to feel good about how their skin looks and feels. 
+                    They are the ones who should make the decisions about what skin treatments are right for them and which ones they would rather not try.
+                    Most importantly, your client should be the one to make the choice about their body hair. Your client should decide if they want to even out their skin tone or leave it beautifully asymmetrical. 
+                    If they like their freckles, their beauty mark or their leg hair they shouldn’t let anyone talk them out of showing them off.</p>
+                <h2>Our Top Rated Products</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="./assets/mango_scrub.jpg" alt="" class="scrub"/>
+                        <h3>Shea Sugar Scrub</h3>
+                        <h4>$8.99</h4>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/ouai.jpg" alt="" class="scrub"/>
+                        <h3>OUAI Body Crème</h3>
+                        <h4>$38.00</h4>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/love&beauty.jpg" alt="" class="scrub"/>
+                        <h3>Love Beauty Body Lotion</h3>
+                        <h4>$6.69</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Body" id="Face">
+            <div class="lefty">
+                <h1>Face</h1>
+                <h3 class="intro">No matter what your skin type is, a daily skin care routine can help you maintain overall skin health and improve specific concerns like acne, scarring, and dark spots.</h3>
+                <p><b>cleansers</b>: use a cleanser suitable for your skin type and avoid going for a squeaky-clean face because it means your face is stripped of your natural oils </p>
+                <p><b>moisturizer</b>: use a lightweight moisturizer that doesn't block your pores for oily skin, and a more cream-based one for dry skin</p>
+                <p><b>Serums</b>: A serum with vitamin C or growth factors or peptides would be better in the morning, under sunscreen. At night, retinol or prescription retinoids work best.</p>
+                <h2>Our Top Rated Products</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="./assets/banila.jpg" alt="" class="scrub"/>
+                        <h3>BANILA CO Clean It Zero</h3>
+                        <h4>$22.00</h4>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/serum.jpg" alt="" class="scrub"/>
+                        <h3>Glow Recipe Pineapple-C</h3>
+                        <h4>$53.00</h4>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/cerave.jpg" alt="" class="scrub"/>
+                        <h3>Cerave Facial Lotion</h3>
+                        <h4>$16.00</h4>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/viva-luna-studios-hYpHkpQG5ms-unsplash.jpg" alt="body" class="bodyimg"/>
+        </div>
+        <div class="Body" id="Hair">
+            <img src="./assets/valeriia-kogan-CIrRI0ujiRo-unsplash.jpg" style="margin-right:75px" alt="body" class="bodyimg"/>
+            <div class="righty">
+                <h1>Hair</h1>
+                <h3>The presentation and health of your hair says something. It can offer insights into your health while also offering insights into your personality.</h3>
+                <p>The foundation of any hairstyle is healthy hair and a healthy scalp. Maintaining a proper moisture balance and repairing damage are crucial if you want to keep your hair looking and feeling its best. 
+                    The impact of the environment around you along with styling damage can really take a toll on the health of your hair.
+                    <br/>
+                    Furthermore, chemical treatments and damage done by styling with heat are among the greatest dangers to the strength and growth capacity of your hair.</p>
+                <h2>Our Top Rated Products</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="./assets/phyto.jpg" alt="" class="scrub"/>
+                        <h3>PHYTO Phytophanère</h3>
+                        <h4>$90.00</h4>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/OlaPlex.jpg" alt="" class="scrub"/>
+                        <h3>Olaplex No.7 Bonding Oil</h3>
+                        <h4>Currently unavailable.</h4>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/rogaine.webp" alt="" class="scrub"/>
+                        <h3>Men's Rogaine</h3>
+                        <h4>$29.95</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Body" id="Makeup">
+            
+            <div class="lefty">
+                <h1>Makeup</h1>
+                <h3 class="intro">Makeup should be the mask that reveals you instead of the mask that conceals you. Your face, your mood and your individual style should be the foundation.</h3>
+                <p>Makeup can be transformative and bold. It can also be understated and subtle. Unlike hair, skin, and nails, the way you do your makeup can change drastically from day to day.
+                    <br/>
+                    It is important that you carefully consider each of your makeup related products. That also means the kind of facial cleansers and moisturizers,
+                    the brand of makeup, the beauty application tools you use.
+
+                </p>
+                <h2>Our Top Rated Products</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="./assets/lipstick.webp" alt="" class="scrub"/>
+                        <h3>BANILA CO Clean It Zero</h3>
+                        <h4>$22.00</h4>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/mascara.webp" alt="" class="scrub"/>
+                        <h3>Maybelline Sky Mascara</h3>
+                        <h4>$8.88</h4>
+                    </div>
+                    <div class="product">
+                        <img src="./assets/sponge.jpg" alt="" class="scrub"/>
+                        <h3>Aesthetica Beauty Sponge</h3>
+                        <h4>$9.99</h4>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/amanda-dalbjorn-t7WrWaewbtw-unsplash.jpg" alt="body" class="bodyimg"/>
+        </div>
+
+        <h1 id="title">Treatments</h1>
+
+        <div class="the-slider">
+        <div class="img-slider">
+            <div class="slide current">
+              <img src="./assets/reflexology.JPG" alt=""/>
+              <div class="info">
+                <h2>Reflexology</h2>
+                <p>All functions and organs of the body have their reflexes in the feet, and by stimulating those reflex points in a particular sequence, each respective organ can be treated on its own.</p>
+              </div>
+            </div>
+             <div class="slide">
+              <img src="./assets/shiatsu.JPG" alt=""/>
+              <div class="info">
+                <h2>Hot Stones Therapy</h2>
+                <p>This bodywork uses localised finger and elbow pressure in a rhythmic sequence on acupuncture meridians. </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="./assets/ThaiMassageArticle.jpg" alt=""/>
+              <div class="info">
+                <h2>Hot Stones Therapy</h2>
+                <p>This bodywork uses localised finger and elbow pressure in a rhythmic sequence on acupuncture meridians. </p>
+              </div>
+            </div>
+            <div class="navigation">
+              <div class="btn active"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+            </div>
+          </div>
+        </div>
+        <h1 class="book"><a href="../booking/Booking.html" style="font-size:30px" >Book an Appointment</a></h1>
+    </main>
+</body>
+<script src = "Wellness.js"></script>
+</html>

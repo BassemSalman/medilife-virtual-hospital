@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mental.css">
+    <link rel="stylesheet" href="../index.css">
+
+</head>
+<body>
+  <nav>
+    <div class='nav-center'>
+      <div class='nav-header'>
+        <img src="../logo.jpg" class='logo' alt='logo' />
+        <button class='nav-toggle' onclick={toggleLinks}>
+          <FaBars />
+        </button>
+      </div>
+      <div class='links-container' >
+        <ul class='links' >
+          <li> <a href="../home/Home.html">Home </a></li>
+          <li> <a href="../covid/Covid.html">Covid</a></li>
+          <li> <a href="../mental/Mental.html" class="active">Mental </a></li>
+          <li> <a href="../wellness/Wellness.html">Wellness </a></li>
+          <li> <a href="../test/Test.html">Tests  </a></li>
+          <li> <a href="../booking/booking.html">Bookings </a></li>
+        </ul>
+      </div>
+      <ul class='social-icons'>
+        <!-- {social.map((socialIcon) => {
+          const { id, url, icon } = socialIcon;
+          return (
+            <li key={id}>
+              <a href={url}>{icon}</a>
+            </li>
+          );
+        })} -->
+      </ul>
+    </div>
+  </nav> 
+    <main>
+        <div class='#wrapper'>
+            <h2>“You don't have to control your thoughts. You just have to stop letting them control you.” ~ Dan Millman</h2> <br/>
+            <div class="video">
+                <iframe width="850" height="500" src="https://www.youtube.com/embed/oxx564hMBUI" title="Mental Health Importance" 
+        allow="accelerometer; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <h3>
+                Our Mental Health Department is well known for it's high quality workers who are 
+                ready to assist anyone who suffers from any mental illness. Feel free to call our hotline
+                whenever you're feeling down and we'll take good care of you!
+            </h3>
+
+            <h1 id="QA">Weekly Q/A with Dr. Smith</h1>
+            
+            <div class="panels">
+                <div class="panel">
+                    <p class="ba">What are the most spread mental illnesses?</p> by Sarah
+                    <p>The main mental illnesses are Anxiety, Depression, and OCD. Luckily, all of them can be treated!</p>
+                    <br/>
+                </div>
+                <div class="panel">
+                    <p class="ba">I'm very stressed when studying, how can I know if I have anxiety?</p> by Ali
+                    <p>It's valid Ali, we should always remember that we are human beings and we have limited energies!</p>
+                </div>
+                <div class="panel">
+                    <p class="ba">What makes mental health so important?</p> by Melhem
+                    <p>Our Mental health has no less importance than our physical health, where it affects our daily life even more!</p>
+                </div>
+            </div>
+
+        
+            <form>
+                    <label for="Questions"><b>Submit your questions to get featured! </b></label><br/>
+                    <input type="text" id="Questions"  size="50"/><br/>
+                    <input type="submit" class="submit"/>
+            </form>
+
+            <h2>Help Us in Conducting More Research!</h2>
+            <h2>Question of the week: How to you deal with your stress usually?</h2>
+            <form>
+                <div class="rad">
+                <input type="radio" id="sleep" name="Study" value="Sleep"/>
+                <label for="sleep">Sleeping to forget</label><br/>
+                </div>
+                <div class="rad">
+                <input type="radio" id="solve" name="Study" value="Solve"/>
+                <label for="solve">Trying to solve the problem</label><br/>
+                </div>
+                <div class="rad">
+                <input type="radio" id="hobby" name="Study" value="Hobby"/>
+                <label for="hobby">I perform a hobby</label> <br/>
+                </div>
+                
+            </form>
+         </div>
+        <footer>
+            Don't forget that you can book your own therapy session, just press <b><a href='../booking/Booking.html'>HERE </a></b> 
+            and book your first appointment now!
+        </footer>
+    </main>
+
+</body>
+</html>

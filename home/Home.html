@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+  <nav>
+    <div class='nav-center'>
+      <div class='nav-header'>
+        <img src="../logo.jpg" class='logo' alt='logo' />
+        <button class='nav-toggle' onclick={toggleLinks}>
+          <FaBars />
+        </button>
+      </div>
+      <div class='links-container' >
+        <ul class='links' >
+          <li> <a href="../home/Home.html"  class="active">Home </a></li>
+          <li> <a href="../covid/Covid.html">Covid</a></li>
+          <li> <a href="../mental/Mental.html">Mental </a></li>
+          <li> <a href="../wellness/Wellness.html">Wellness </a></li>
+          <li> <a href="../test/Test.html">Tests  </a></li>
+          <li> <a href="../booking/booking.html">Bookings </a></li>
+        </ul>
+      </div>
+      <ul class='social-icons'>
+        <!-- {social.map((socialIcon) => {
+          const { id, url, icon } = socialIcon;
+          return (
+            <li key={id}>
+              <a href={url}>{icon}</a>
+            </li>
+          );
+        })} -->
+      </ul>
+    </div>
+  </nav>  
+    <div class="full-container">
+        <div class="main">
+          <div class="text-container ">
+            <p>Making Health</p>
+            <p class="anime3d"style=" margin-bottom: 10px">Care better together</p>
+          </div>
+          <div class="text-par">
+            <p style=" color: rgb(63, 63, 63)" >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="buttons-container">
+           <a href='../booking/Booking.html'>
+            <button class="sub-btn">Get Appointment</button></a>
+            <button class="sub-btn2">Learn More</button>
+          </div>
+        </div>
+      <div class="image-container2"></div>
+    </div>
+      <footer class="footer">
+      <div class="higher-footer animation">
+       <div>
+         <div style="display:flex">
+           <FcCallback class="mh-svg"/>
+           <div class="footer-txxt">
+             <p style="margin-bottom:15px; color:white; font-size:20px">Emergency Call</p>
+             <p style="margin-bottom:0">+32910-12933-23</p>
+             <p>+4325-41123-22</p>
+           </div>
+         </div>
+       </div>
+       <div>
+         <div style="display:flex">
+           <GoLocation class="mh-svg"/>
+           <div class="footer-txxt">
+               <p style="margin-bottom:15px; color:white; font-size:20px">Location</p>
+               <p style="margin-bottom:0">+32910-12933-23</p>
+             <p>+4325-41123-22</p>
+           </div>
+         </div>
+       </div>
+       <div>
+         <div style="display:flex">
+           <FaAmbulance class="mh-svg"/>
+           <div class="footer-txxt">
+             <p style="margin-bottom:15px; color:white; font-size:20px">Ambulance</p>
+             <p style="margin-bottom:0">+32910-12933-23</p>
+             <p>+4325-41123-22</p>
+           </div>
+         </div>
+       </div>
+      </div>
+      </footer>
+</body>
+</html>
